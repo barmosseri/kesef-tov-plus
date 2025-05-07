@@ -114,6 +114,7 @@ export function BusinessSettings() {
       <CardContent>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+            {/* General Business Info Section */}
             <div className="space-y-4">
               <h3 className="text-lg font-medium">פרטי עסק כלליים</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -213,6 +214,7 @@ export function BusinessSettings() {
 
             <Separator />
 
+            {/* Category Section */}
             <div className="space-y-4">
               <h3 className="text-lg font-medium">קטגוריה</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -258,11 +260,11 @@ export function BusinessSettings() {
                   name="vatAdvanceType"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>סוג מקדמות מע"מ</FormLabel>
+                      <FormLabel>סוג מקדמות מע&quot;מ</FormLabel>
                       <Select onValueChange={field.onChange} defaultValue={field.value}>
                         <FormControl>
                           <SelectTrigger>
-                            <SelectValue placeholder="בחר סוג מקדמות מע"מ" />
+                            <SelectValue placeholder="בחר סוג מקדמות מע&quot;מ" />
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
@@ -319,6 +321,7 @@ export function BusinessSettings() {
 
             <Separator />
 
+            {/* Source Deduction Section */}
             <div className="space-y-4">
               <h3 className="text-lg font-medium">ניכוי במקור</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -381,6 +384,7 @@ export function BusinessSettings() {
 
             <Separator />
 
+            {/* Bank Account Section */}
             <div className="space-y-4">
               <h3 className="text-lg font-medium">חשבון בנק</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
